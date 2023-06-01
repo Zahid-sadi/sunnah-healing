@@ -1,19 +1,21 @@
 import React, { useState } from 'react';
 import AppointmentHero from '../AppointmentHero/AppointmentHero';
-import AccessibleAppointment from '../AccessibleAppointment/AccessibleAppointment';
+import AppointmentInfo from '../AppointmentInfo/AppointmentInfo';
 
 const Appointment = () => {
     const [chooseDate, setChooseDate] = useState(new Date());
     return (
-        <AppointmentHero
+       <>
+         <AppointmentHero
         chooseDate={chooseDate}
         setChooseDate={setChooseDate}
-        ></AppointmentHero>,
+        ></AppointmentHero>
+        <AppointmentInfo
+        chooseDate={chooseDate}
+        ></AppointmentInfo>
 
-        <AccessibleAppointment
-        chooseDate={chooseDate}
-        setChooseDate={setChooseDate}
-        ></AccessibleAppointment>
+      
+       </>
     );
 };
 
