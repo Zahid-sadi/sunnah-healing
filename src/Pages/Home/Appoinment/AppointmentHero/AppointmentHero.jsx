@@ -1,19 +1,28 @@
-import React from "react";
+import { format } from "date-fns";
+import { DayPicker } from 'react-day-picker';
 
-const AppointmentHero = () => {
+
+const AppointmentHero = ({chooseDate,setChooseDate}) => {
+   
     return (
-        <div class="hero min-h-screen">
+        <div className="hero min-h-screen ">
+            <img className='h-96 w-full
+            ' src="https://i0.wp.com/www.usa.edu/wp-content/uploads/2021/10/cupping-therapy-hero-1.jpeg?fit=1548%2C1000&ssl=1" alt="" />
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content grid md:grid-cols-1 lg:grid-cols-2 gap-6 m-4">
-                <div className="">
+                <div className=""> 
                     <p className="mb-5">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    
                     </p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <DayPicker
+                     mode="single"
+                     selected={chooseDate}
+                     onSelect ={setChooseDate}
+
+                    ></DayPicker>
                 </div>
                 <div className="">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                    <h3 className="mb-5 text-3xl font-bold"> Your selected date <br /> <span className="text-orange-400 text-lg">{format(chooseDate,'PPPP' )}</span> </h3>
                     <p className="mb-5">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
