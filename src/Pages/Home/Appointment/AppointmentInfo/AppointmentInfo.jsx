@@ -7,6 +7,7 @@ const AppointmentInfo = ({chooseDate}) => {
     const [appointmentCategories, setAppointmentCategories] = useState([]);
 
     const [service, setService] = useState({})
+    // console.log(service);
 
     useEffect(() => {
         fetch("appointmentCategory.json")
@@ -22,16 +23,19 @@ const AppointmentInfo = ({chooseDate}) => {
             </div>
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto">
-                {appointmentCategories.map((appCategory) => (
+                {
+                appointmentCategories.map(appCategory => (
                     <AppointmentCategory key={appCategory._id} appCategory={appCategory} 
                     setService={setService}
                     ></AppointmentCategory>
                 ))}
             </div>
 
-            <AppointmentModal 
-            service={service}
+             <AppointmentModal 
+           service ={service}
+           chooseDate={chooseDate}
             ></AppointmentModal>
+            
         </div>
     );
 };

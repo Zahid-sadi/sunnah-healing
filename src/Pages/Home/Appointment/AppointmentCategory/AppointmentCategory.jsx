@@ -1,7 +1,7 @@
 import React from "react";
 
 const AppointmentCategory = ({appCategory,setService}) => {
-    const {name , img ,slots} = appCategory;
+    const {name, img, slots} = appCategory;
     return (
         <div className="card h-96 w-96 glass mx-auto">
             <figure>
