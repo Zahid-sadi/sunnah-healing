@@ -6,7 +6,7 @@ import AppointmentModal from "../AppointmentModal/AppointmentModal";
 const AppointmentInfo = ({chooseDate}) => {
     const [appointmentCategories, setAppointmentCategories] = useState([]);
 
-    const [service, setService] = useState({})
+    const [service, setService] = useState(null)
     // console.log(service);
 
     useEffect(() => {
@@ -24,17 +24,21 @@ const AppointmentInfo = ({chooseDate}) => {
 
             <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto">
                 {
-                appointmentCategories.map(appCategory => (
-                    <AppointmentCategory key={appCategory._id} appCategory={appCategory} 
+                appointmentCategories.map(appointmentCategory => (
+                    <AppointmentCategory key={appointmentCategory._id} appointmentCategory={appointmentCategory} 
                     setService={setService}
                     ></AppointmentCategory>
                 ))}
             </div>
 
-             <AppointmentModal 
+           {
+           service &&  <AppointmentModal
+        //    key={service._id} 
            service ={service}
+           setService={setService}
            chooseDate={chooseDate}
             ></AppointmentModal>
+            }
             
         </div>
     );

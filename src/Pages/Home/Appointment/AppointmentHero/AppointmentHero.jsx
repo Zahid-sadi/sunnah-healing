@@ -11,20 +11,17 @@ const AppointmentHero = ({chooseDate, setChooseDate}) => {
             />
             <div className="hero-overlay bg-opacity-60"></div>
             <div className=" mx-auto hero-content text-center text-neutral-content grid md:grid-cols-1 lg:grid-cols-2  ">
-            <div className="text-center w-1/2 mx-auto ">
-                    <h3 className="mb-5 text-3xl font-bold">
-                        Select Your Date
-                    </h3>
+                <div className="text-center w-1/2 mx-auto ">
+                    <h3 className="mb-5 text-3xl font-bold">Select Your Date</h3>
                     <p className="">
                         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
                         quasi. In deleniti eaque aut repudiandae et a id nisi.
                     </p>
                 </div>
-                <div className="text-center w-1/2">
+                <div className="text-center w-1/2 mx-auto">
                     <p className="mb-5">Choose from here</p>
-                    <DayPicker  mode="single" selected={chooseDate} onSelect={setChooseDate}></DayPicker>
+                    <DayPicker mode="single" selected={chooseDate} onSelect={setChooseDate}></DayPicker>
                 </div>
-              
             </div>
         </div>
     );
