@@ -15,14 +15,14 @@ const AppointmentInfo = ({chooseDate}) => {
         .then((data) => setAppointmentCategories(data));
     }, []);
     return (
-        <div className="mt-10">
+        <div className="m-auto">
             <div >
                 <h3 className="text-center text-lg text-teal-500 font-bold p-5 m-5">
                     You Choose Appointment on  <span className="text-bold text-2xl text-orange-500">{format(chooseDate, "PPPP")}</span>
                 </h3>
             </div>
 
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 mx-auto">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mx-auto">
                 {
                 appointmentCategories.map(appointmentCategory => (
                     <AppointmentCategory key={appointmentCategory._id} appointmentCategory={appointmentCategory} 
@@ -33,7 +33,7 @@ const AppointmentInfo = ({chooseDate}) => {
 
            {
            service &&  <AppointmentModal
-        //    key={service._id} 
+           key={service._id} 
            service ={service}
            setService={setService}
            chooseDate={chooseDate}

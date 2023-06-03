@@ -1,8 +1,7 @@
-import React from "react";
-import {Link} from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Login = () => {
-    
+const SignUp = () => {
     return (
         <div className="hero min-h-screen bg-slate-400">
             <div className="hero-content flex-col lg:flex-row-reverse">
@@ -12,6 +11,12 @@ const Login = () => {
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl py-10 bg-slate-700">
                     <form  className="card-body ">
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text text-blue-500">Name</span>
+                            </label>
+                            <input type="name" name="name" placeholder="email" className="input input-bordered glass hover:bg-white" />
+                        </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text text-blue-500">Email</span>
@@ -25,7 +30,7 @@ const Login = () => {
                             <input type="password" name="password" placeholder="password" className="input input-bordered glass hover:bg-white" />
                             <label className="label">
                                 <Link href="#" className="label-text-alt link link-hover text-warning">
-                                    Forgot password?
+                                    error
                                 </Link>
                             </label>
                         </div>
@@ -33,7 +38,7 @@ const Login = () => {
                             <input className="btn btn-success" type="submit" value="login" />
                         </div>
                     </form>
-                    <p className='text-center font-semibold text-lime-300 '>Do you want to <Link className=" text-orange-500 font-bold" to='/signUp'>SignUp</Link></p>
+                    <p className='text-center font-semibold text-lime-300 '>have you an account ?  <Link className=" text-orange-500 font-bold" to='/login'>Login</Link></p>
                 </div>
             </div>
             
@@ -41,4 +46,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default SignUp;

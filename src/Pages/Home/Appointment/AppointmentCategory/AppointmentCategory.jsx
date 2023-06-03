@@ -3,7 +3,7 @@ import React from "react";
 const AppointmentCategory = ({appointmentCategory,setService}) => {
     const {name, img, slots} = appointmentCategory;
     return (
-        <div className="card h-96 w-96 glass mx-auto">
+        <div className="card card-compact w-96  glass mx-auto">
             <figure>
                 <img className="h-64 w-full" src={img} alt="" />
             </figure>
