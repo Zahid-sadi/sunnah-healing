@@ -5,22 +5,22 @@ const Navbar = () => {
     const navItems = (
         <>
             <li>
-                <Link to="/">home</Link>
+                <Link to="/">Home</Link>
             </li>
             <li>
-                <Link to="/about">about</Link>
+                <Link to="/about">About</Link>
             </li>
             <li>
-                <Link to="/category">category</Link>
+                <Link to="/category">Category</Link>
             </li>
             <li>
-                <Link to="/contact">contact</Link>
+                <Link to="/contact">Contact</Link>
             </li>
             <li>
-                <Link to="/review">review</Link>
+                <Link to="/review">Review</Link>
             </li>
             <li>
-                <Link to="/appointment">appointment</Link>
+                <Link to="/appointment">Appointment</Link>
             </li>
         </>
     );
