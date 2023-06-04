@@ -1,7 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
 import {Link} from "react-router-dom";
+import {AuthContext} from "../../../Contexts/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext);
+
+    const logOutHandler = ()=> { 
+      
+      logOut()
+      .then(()=>{
+        toast.warn('SignOut successfully')
+      })
+      .catch(error=>{
+        console.log(error);
+      })
+
+    }
+
     const navItems = (
         <>
             <li>
@@ -17,15 +34,18 @@ const Navbar = () => {
                 <Link to="/contact">Contact</Link>
             </li>
             <li>
-                <Link to="/review">Review</Link>
+                <Link to="/review">Reviews</Link>
             </li>
+            {
+              user?.uid ?<p className="text-black">hhh{user.displayName}</p>:<p>nai</p>
+            }
             <li>
                 <Link to="/appointment">Appointment</Link>
             </li>
         </>
     );
     return (
-        <div className="navbar bg-green-200  mx-auto glass s">
+        <div className="navbar bg  mx-auto glass s">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -59,9 +79,17 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1 ">{navItems}</ul>
             </div>
             <div className="navbar-end ">
-                <Link to="/login" className="btn border-indigo-400 rounded-s-full">
-                    Login
-                </Link>
+                {user?.uid ? (
+                  
+                    <Link onClick={logOutHandler} to="/login" className="btn border-indigo-400 rounded-s-full">
+                        Log out
+                    </Link>
+                ) : (
+                    <Link to="/login" className="btn border-indigo-400 rounded-s-full">
+                        Log in
+                    </Link>
+                )}
+                
             </div>
         </div>
     );

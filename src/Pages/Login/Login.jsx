@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import {Link} from "react-router-dom";
 import { AuthContext } from "../../Contexts/AuthProvider";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -18,7 +20,7 @@ const Login = () => {
         .then(result =>{
             const user = result.user;
             console.log(user);
-
+            toast.success('Successfully Login')
         })
         .then(error =>console.log(error)); 
     }
@@ -57,7 +59,7 @@ const Login = () => {
                     <p className='text-center font-semibold text-lime-300 '>Do you want to <Link className=" text-orange-500 font-bold" to='/signUp'>SignUp</Link></p>
                 </div>
             </div>
-            
+           
         </div>
     );
 };
