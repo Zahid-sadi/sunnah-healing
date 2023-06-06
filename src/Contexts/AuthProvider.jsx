@@ -8,7 +8,7 @@ const auth = getAuth(app)
 const AuthProvider = ({children}) => {
     const [user,setUser] =useState()
 
-    const [loadng, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const createUser = (email,password)=>{
         setLoading(true)
@@ -16,14 +16,16 @@ const AuthProvider = ({children}) => {
     }
 
     const loginUser = (email,password)=>{
+        setLoading(true)
         return signInWithEmailAndPassword(auth,email,password);
     }
 
     const updateUser = (userInfo)=>{
-        updateUser(user, userInfo)
+        updateUser(auth.currentUser, userInfo)
     }
 
     const logOut =()=>{
+        setLoading(true)
      return signOut(auth);
     }
     useEffect(() => {
@@ -43,6 +45,7 @@ const AuthProvider = ({children}) => {
         updateUser,
         loginUser,
         logOut,
+        loading,
         user
     }
     

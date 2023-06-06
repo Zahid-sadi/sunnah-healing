@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import {AuthContext} from "../../../Contexts/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-hot-toast";
+
 
 const Navbar = () => {
     const {user,logOut} = useContext(AuthContext);
@@ -11,7 +11,7 @@ const Navbar = () => {
       
       logOut()
       .then(()=>{
-        toast.warn('SignOut successfully')
+        toast('SignOut successfully')
       })
       .catch(error=>{
         console.log(error);
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
             </li>
             <li>
-                <Link to="/category">Category</Link>
+                <Link to="/serviceCategory">Category</Link>
             </li>
             <li>
                 <Link to="/contact">Contact</Link>
@@ -36,8 +36,14 @@ const Navbar = () => {
             <li>
                 <Link to="/review">Reviews</Link>
             </li>
+            <li>
+                <Link to="/faq">FAQ</Link>
+            </li>
+            <li>
+                <Link to="/review">Blogs</Link>
+            </li>
             {
-              user?.uid ?<p className="text-black">hhh{user.displayName}</p>:<p>nai</p>
+              user?.uid ?<p className="text-black">{user.displayName}</p>:<p></p>
             }
             <li>
                 <Link to="/appointment">Appointment</Link>
@@ -45,7 +51,7 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="navbar bg  mx-auto glass s">
+        <div className="navbar bg-green-200  mx-auto glass s">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -71,7 +77,7 @@ const Navbar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <Link to="" className="text-xl font-bold text-blue-900">
+                <Link to="" className="text-2xl font-bold text-green-900">
                     Sunnah Healing
                 </Link>
             </div>

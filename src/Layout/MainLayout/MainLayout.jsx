@@ -5,9 +5,9 @@ import Footer from '../../Pages/Shared/Footer/Footer';
 
 const MainLayout = () => {
     return (
-        <div className='bg-slate-500'>
+        <div className='bg-blue-300'>
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <Outlet ></Outlet>
             <Footer></Footer>
         </div>
     );

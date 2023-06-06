@@ -16,9 +16,9 @@ const Footer = () => {
                     >
                         <img className="" c="" alt="" />
                     </svg>
-                    <h3 className="text-blue-700 font-bold text-xl">Sunnah healing</h3>
-                    <p>
-                        Providing reliable treatment since 2023
+                    <h3 className="text-white font-bold text-xl">Sunnah healing</h3>
+                    <p className="text-gray-900 font-semibold">
+                        We care as prophet(pbuh) recommended 
                     </p>
                 </div>
                 <div>

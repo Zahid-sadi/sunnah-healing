@@ -1,10 +1,12 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Contexts/AuthProvider';
+import { toast } from 'react-hot-toast';
 
 const SignUp = () => {
-    const {createUser,updateUser}= useContext(AuthContext)
-    const [signUpError, setSignUpError]=useState('')
+    const {createUser,updateUser}= useContext(AuthContext);
+    const [signUpError, setSignUpError]=useState('');
+    const navigate = useNavigate();
 
     
 
@@ -17,17 +19,20 @@ const SignUp = () => {
         const email = form.email.value;
         const password = form.password.value;
         form.reset()
-
+console.log(name);
 
         createUser(email,password)
         .then(result=>{
             const user = result.user
             console.log(user);
+            toast.success('signUp successfully')
             const userInfo ={
                 displayName: name
             }
             updateUser(userInfo)
-            .then(()=>{})
+            .then(()=>{
+                navigate('/')
+            })
             .catch(error=>{console.log(error)});
         })
         .catch(err =>{
@@ -36,7 +41,7 @@ const SignUp = () => {
         setSignUpError(err.message)
      
         });
-
+console.log(handleSignUp);
        
 
     }
@@ -54,7 +59,7 @@ const SignUp = () => {
                             <label className="label">
                                 <span className="label-text text-blue-500">Name</span>
                             </label>
-                            <input type="name" name="name" placeholder="email" className="input input-bordered glass hover:bg-white" />
+                            <input type="text" name="name" placeholder=" Your Name" className="input input-bordered glass hover:bg-white" />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -68,9 +73,9 @@ const SignUp = () => {
                             </label>
                             <input type="password" name="password" placeholder="password" className="input input-bordered glass hover:bg-white" />
                             <label className="label">
-                                <Link href="#" className="label-text-alt link link-hover text-warning">
+                                <p href="#" className=" text-warning">
                                     {signUpError && <p>{signUpError}</p>}
-                                </Link>
+                                </p>
                             </label>
                         </div>
                         <div className="form-control mt-6">
