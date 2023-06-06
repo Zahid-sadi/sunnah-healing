@@ -2,9 +2,9 @@ import {DayPicker} from "react-day-picker";
 
 const AppointmentHero = ({chooseDate, setChooseDate}) => {
     return (
-        <div className="hero h-[500px] w-full">
+        <div className="hero h-[600px] w-full">
             <img
-                className="h-[500px] w-full 
+                className="h-[600px] w-full 
             "
                 src="https://i0.wp.com/www.usa.edu/wp-content/uploads/2021/10/cupping-therapy-hero-1.jpeg?fit=1548%2C1000&ssl=1"
                 alt=""

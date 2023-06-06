@@ -1,7 +1,7 @@
 import React from "react";
 
-const AppointmentCategory = ({appointmentCategory,setService}) => {
-    const {name, img, slots} = appointmentCategory;
+const AppointmentCategory = ({category,setService}) => {
+    const {name, img, slots} = category;
     return (
         <div className="card card-compact w-96  glass mx-auto">
             <figure>
@@ -16,7 +16,7 @@ const AppointmentCategory = ({appointmentCategory,setService}) => {
                     disabled={slots.length === 0}
                     htmlFor="appointment_modal"
                     className="btn"
-                    onClick={()=>setService(appointmentCategory)}
+                    onClick={()=>setService(category)}
                     >
                         Get Appointment
                     </label>

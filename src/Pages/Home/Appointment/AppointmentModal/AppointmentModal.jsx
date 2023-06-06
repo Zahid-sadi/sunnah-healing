@@ -21,7 +21,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
         const message = form.message.value;
 
         const appointmentSubmission = {
-            appointmentDate: date,
+            appointmentDate:date,
             serviceName: serviceName,
             customer: name,
             slot,
@@ -55,7 +55,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
     return (
         <div>
             <input type="checkbox" id="appointment_modal" className="modal-toggle" />
-            <div className="modal glass">
+            <div className="modal">
                 <div className="modal-box ">
                     <label
                         htmlFor="appointment_modal"
@@ -70,7 +70,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
                             name="date"
                             readOnly
                             defaultValue={date}
-                            className="input input-bordered bg-info font-bold text-center  w-full"
+                            className="input input-bordered bg-info font-bold font-mono  text-center  w-full"
                         />
                         <input
                             type="text"
@@ -79,7 +79,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
                             placeholder="your name "
                             className=" input input-bordered w-full"
                         />
-                        <select name="slot" className="select select-accent w-full ">
+                        <select name="slot" className="select select-accent font-mono font-bold w-full ">
                             {slots.map((slot, index) => (
                                 <option value={slot} key={index}>
                                     {" "}

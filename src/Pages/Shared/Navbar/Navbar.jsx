@@ -1,23 +1,20 @@
 import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import {AuthContext} from "../../../Contexts/AuthProvider";
-import { toast } from "react-hot-toast";
-
+import {toast} from "react-hot-toast";
 
 const Navbar = () => {
-    const {user,logOut} = useContext(AuthContext);
+    const {user, logOut} = useContext(AuthContext);
 
-    const logOutHandler = ()=> { 
-      
-      logOut()
-      .then(()=>{
-        toast('SignOut successfully')
-      })
-      .catch(error=>{
-        console.log(error);
-      })
-
-    }
+    const logOutHandler = () => {
+        logOut()
+        .then(() => {
+            toast("SignOut successfully");
+        })
+        .catch((error) => {
+            console.log(error);
+        });
+    };
 
     const navItems = (
         <>
@@ -42,16 +39,14 @@ const Navbar = () => {
             <li>
                 <Link to="/review">Blogs</Link>
             </li>
-            {
-              user?.uid ?<p className="text-black">{user.displayName}</p>:<p></p>
-            }
+
             <li>
                 <Link to="/appointment">Appointment</Link>
             </li>
         </>
     );
     return (
-        <div className="navbar bg-green-200  mx-auto glass s">
+        <div className="navbar  glass -mb-20 sticky top-5 container mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -77,7 +72,7 @@ const Navbar = () => {
                         {navItems}
                     </ul>
                 </div>
-                <Link to="" className="text-2xl font-bold text-green-900">
+                <Link to="" className="text-2xl font-bold ms-8 text-green-900">
                     Sunnah Healing
                 </Link>
             </div>
@@ -85,8 +80,16 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal px-1 ">{navItems}</ul>
             </div>
             <div className="navbar-end ">
+                <div className="me-5 ">
+                    {
+                    user?.uid?
+                    <p className="text-black font-bold mx-auto">{user.displayName
+                        } </p> :''
+        
+                }
+                
+                </div>
                 {user?.uid ? (
-                  
                     <Link onClick={logOutHandler} to="/login" className="btn border-indigo-400 rounded-s-full">
                         Log out
                     </Link>
@@ -95,7 +98,6 @@ const Navbar = () => {
                         Log in
                     </Link>
                 )}
-                
             </div>
         </div>
     );
