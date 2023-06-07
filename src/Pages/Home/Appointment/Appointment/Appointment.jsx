@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import AppointmentHero from '../AppointmentHero/AppointmentHero';
 import AppointmentInfo from '../AppointmentInfo/AppointmentInfo';
+
+
 const Appointment = () => {
     const [chooseDate, setChooseDate] = useState(new Date());
     return (
@@ -12,9 +14,6 @@ const Appointment = () => {
         <AppointmentInfo
         chooseDate={chooseDate}
         ></AppointmentInfo>
-     
-
-      
        </>
     );
 };

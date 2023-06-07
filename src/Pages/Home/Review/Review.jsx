@@ -16,7 +16,7 @@ const Review = ({singleReview}) => {
     const { name, description, picture} = singleReview;
     console.log(singleReview);
     return (
-        <div className="h-80 p-5 mx-auto">
+        <div className="h-80 p-5 mx-auto ">
             <Swiper
                 slidesPerView={4}
                 spaceBetween={30}

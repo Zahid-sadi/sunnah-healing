@@ -1,17 +1,29 @@
 import React from "react";
-
+import 'animate.css';
 const About = () => {
     return (
-        <div className="hero min-h-screen bg-base-200 ">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="text-center  shadow-2xl w-1/2">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsa assumenda consectetur quibusdam magni perferendis amet vel repellendus atque vero corrupti sapiente voluptate inventore fugit nulla, ad commodi laborum illo, tempora alias enim odio tenetur explicabo deserunt? Ex, tempore! Alias quae earum, ea magnam vitae veritatis, voluptatem obcaecati odio illo eius vero, dicta illum debitis? Rem eum eligendi ab quos tempora optio earum nostrum impedit quisquam, temporibus iusto nemo aliquid blanditiis quasi magnam voluptate a culpa saepe debitis quod nam animi. Commodi, asperiores nesciunt eligendi placeat nam neque pariatur.
-          </div>
-          <div className="w-1/2 shadow-2xl bg-base-100">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ipsa assumenda consectetur quibusdam magni perferendis amet vel repellendus atque vero corrupti sapiente voluptate inventore fugit nulla, ad commodi laborum illo, tempora alias enim odio tenetur explicabo deserunt? Ex, tempore! Alias quae earum, ea magnam vitae veritatis, voluptatem obcaecati odio illo eius vero, dicta illum debitis? Rem eum eligendi ab quos tempora optio earum nostrum impedit quisquam, temporibus iusto nemo aliquid blanditiis quasi magnam voluptate a culpa saepe debitis quod nam animi. Commodi, asperiores nesciunt eligendi placeat nam neque pariatur.
-          </div>
+        <div className="hero mt-10 h-fit p-10 bg-blue-300 ">
+            <div className="hero-content flex-col lg:flex-row-reverse bg-white rounded-lg ">
+                <div data-aos="fade-down-left"className="  shadow-2xl w-1/2 p-8 text-start">
+                  <h1 className="text-5xl font-extrabold p-5 text-center ">About Us</h1>
+                    <p>Our team of highly trained professionals incorporates the latest complementary therapies into their
+                    practice to bring about effective healing and a renewed sense of vitality. Whether you are seeking
+                    treatment for acute or chronic health conditions, or just want to maintain your health at its peak,
+                    our team can provide a thorough assessment and evaluation to a personalized treatment plan for you.
+                    At Hijama Singapore, we take a holistic approach to well-being by providing a comprehensive range of
+                    .</p>
+                </div>
+                <div  data-aos="fade-down-right" className="w-1/2 shadow-2xl p-8 ">
+                    <h2 className="text-4xl font-extrabold p-5 text-center">How we care </h2>
+                    <h4 className="text-xl font-bold">Certified practitioner</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, consequuntur.</p>
+                    <h4 className="text-xl font-bold">Modern technology</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, consequuntur.</p>
+                    <h4 className="text-xl font-bold">House Call Service</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, consequuntur.</p>
+                </div>
+            </div>
         </div>
-      </div>
     );
 };
 

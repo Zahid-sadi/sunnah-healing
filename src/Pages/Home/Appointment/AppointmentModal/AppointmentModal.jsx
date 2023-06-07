@@ -3,7 +3,7 @@ import React, {useContext} from "react";
 import { AuthContext } from "../../../../Contexts/AuthProvider";
 import { toast } from "react-hot-toast";
 
-const AppointmentModal = ({service, setService, chooseDate}) => {
+const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
     const {name:serviceName, slots} = service;
     // console.log(slots);
     const date = format(chooseDate, "PPPP");
@@ -42,6 +42,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
             if(data.acknowledged){
                 setService(null);
                 toast.success('booked')
+                refetch();
 
             }
             else{
@@ -81,9 +82,12 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
                         />
                         <select name="slot" className="select select-accent font-mono font-bold w-full ">
                             {slots.map((slot, index) => (
-                                <option value={slot} key={index}>
-                                    {" "}
-                                    {slot}
+                                <option 
+                                value={slot}
+                                key={index}>
+                                    
+                                {slot}
+
                                 </option>
                             ))}
                         </select>
@@ -95,7 +99,7 @@ const AppointmentModal = ({service, setService, chooseDate}) => {
                             className="input input-bordered  w-full"
                         />
                         <input
-                            type="text"
+                            type="number"
                             name="phone"
                             placeholder="Your Phone"
                             className="input input-bordered w-full"

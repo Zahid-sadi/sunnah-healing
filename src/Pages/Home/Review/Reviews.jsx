@@ -73,7 +73,7 @@ const Reviews = () => {
     //   ];
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-7'>
+        <div className='grid grid-cols-1 lg:grid-cols-7  bg-slate-400'>
             {
                 reviews.map(singleReview => <Review
                 key={singleReview._id}

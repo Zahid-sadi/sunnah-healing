@@ -1,5 +1,9 @@
 import React from 'react';
 import BannerCarousel from './BannerCarousel';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const Banner = () => {
     return (
@@ -12,7 +16,7 @@ const Banner = () => {
         />
         <div className="hero-overlay bg-opacity-50"></div>
         <div className=" mx-auto hero-content text-center text-neutral-content grid md:grid-cols-1 lg:grid-cols-2 ">
-        <div className="text-center w-1/2 mx-auto p-auto">
+        <div data-aos="fade-up" className="text-center w-1/2 mx-auto p-auto">
                 <h3 className="mb-5 text-3xl font-bold">Heal from the Sunnah </h3>
                 <p className="">
                     Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
