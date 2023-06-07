@@ -32,11 +32,8 @@ const BannerCarousel = () => {
             modules={[Autoplay, Navigation]}
             className="mySwiper"
             >
-                <SwiperSlide ><img className="h-fit  w-full " src={img1} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-fit  w-full " src={img2} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-fit  w-full " src={img3} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-fit  w-full " src={img4} alt="" /></SwiperSlide>
                 <SwiperSlide ><img className="h-fit  w-full " src={img5} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-fit  w-full " src={img3} alt="" /></SwiperSlide>
                
                
             </Swiper>
