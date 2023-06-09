@@ -17,10 +17,18 @@ const Banner = () => {
 
             <div className="hero-overlay bg-opacity-70 "></div>
             <div className=" mx-auto hero-content text-center text-neutral-content grid md:grid-cols-1 lg:grid-cols-2 ">
-                <div className="text-center mx-auto p-8 text-blue-200 bg-gradient-to-r  from-indigo-100 ...">
-                    <h3 className="mb-5 text-3xl font-bold">Heal from the Sunnah </h3>
-                    <p className=" text-lg font-bold">
-                    Jabir ibn ‘Abd-Allah (may Allah be pleased with him) said: I heard the Messenger of Allah (peace and blessings of Allah be upon him) say: “If there is anything good in the medicines with which you treat yourselves, it is in the incision of the cupper, or a drink of honey or cauterization with fire, but I do not like to be cauterized.” (Narrated by al-Bukhari, 6583; Muslim, 2205). 
+                <div
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                    className="text-center mx-auto  p-8 text-blue-300 bg-gradient-to-r  from-indigo-100 ..."
+                >
+                    <h3 className="mb-5 text-3xl font-bold text-white">Heal from the Sunnah </h3>
+                    <p className=" text-lg ">
+                        Jabir ibn ‘Abd-Allah (may Allah be pleased with him) said: I heard the Messenger of Allah (peace
+                        and blessings of Allah be upon him) say: “If there is anything good in the medicines with which
+                        you treat yourselves, it is in the incision of the cupper, or a drink of honey or cauterization
+                        with fire, but I do not like to be cauterized.” (Narrated by al-Bukhari, 6583; Muslim, 2205).
                     </p>
                 </div>
             </div>

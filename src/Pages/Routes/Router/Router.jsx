@@ -5,7 +5,6 @@ import Login from "../../Login/Login";
 import Appointment from "../../Home/Appointment/Appointment/Appointment";
 import SignUp from "../../SignUp/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import Reviews from "../../Home/Review/Reviews";
 import Faq from "../../Home/Faq/Faq";
 import About from "../../Home/About/About";
 import ServiceCategories from "../../Home/ServiceCategory/ServiceCategories";
@@ -34,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/review',
-                element:<Reviews></Reviews>
+                // element:,
             },
             {
                 path:'/faq',

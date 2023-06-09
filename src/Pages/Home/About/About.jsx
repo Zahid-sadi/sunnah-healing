@@ -26,6 +26,9 @@ const About = () => {
                     <h4  className="text-xl font-bold ">House Call Service</h4>
                     {/* <FontAwesomeIcon className="bg-white" icon="fa-duotone fa-house-person-return" flip /> */}
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus, consequuntur.</p>
+                    <h4  className="text-xl font-bold ">Membership / Year</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, qui?</p>
+
                 </div>
             </div>
         </div>
