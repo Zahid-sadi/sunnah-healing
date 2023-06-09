@@ -25,9 +25,6 @@ const Navbar = () => {
                 <Link to="/about">About</Link>
             </li>
             <li>
-                <Link to="/serviceCategory">Category</Link>
-            </li>
-            <li>
                 <Link to="/contact">Contact</Link>
             </li>
             <li>
@@ -36,17 +33,18 @@ const Navbar = () => {
             <li>
                 <Link to="/faq">FAQ</Link>
             </li>
-            <li>
-                <Link to="/review">Blogs</Link>
-            </li>
 
             <li>
                 <Link to="/appointment">Appointment</Link>
             </li>
+            <li>
+                <Link to="/myAppointmentDetail">Appointment Detail</Link>
+            </li>
         </>
     );
+
     return (
-        <div  data-aos="fade-down" className="navbar  glass -mb-20 sticky top-5 container mx-auto h-20">
+        <div data-aos="fade-down" className="navbar  glass container mx-auto h-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -81,19 +79,12 @@ const Navbar = () => {
             </div>
             <div className="navbar-end ">
                 <div className="me-5 ">
-                    {
-                    user?.uid?
-                    <p className="text-orange-400 font-bold mx-auto">{user.displayName
-                        } </p> :''
-        
-                }
-                
+                    {user?.uid ? <p className="text-orange-400 font-bold mx-auto">{user.displayName} </p> : ""}
                 </div>
                 {user?.uid ? (
                     <Link onClick={logOutHandler} to="/login" className="btn border-indigo-400 rounded-s-full">
                         Log out
                     </Link>
-                    
                 ) : (
                     <Link to="/login" className="btn border-indigo-400 rounded-s-full">
                         Log in

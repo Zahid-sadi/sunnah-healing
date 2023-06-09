@@ -7,7 +7,7 @@ const Faq = () => {
             <div className="hero-content flex-col lg:flex-row-reverse m-auto  ">
                 
                 <div className="text-center lg:text-left">
-                    <h1 className=" text-4xl p-5 bg-slate-400 rounded-lg shadow-2xl mb-5  font-bold  animate__heartBeat">Hijama FAQ</h1>
+                    <h1 className=" text-4xl p-5 bg-gray-400 rounded-lg shadow-2xl mb-5  font-bold  animate__heartBeat">Hijama FAQ</h1>
                     <Accordion>
                     <AccordionItem>
                             <AccordionHeader className= " bg-blue-400 p-4 rounded-t-xl mb-2 w-full font-bold text-lg">

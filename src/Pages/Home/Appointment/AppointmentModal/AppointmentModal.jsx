@@ -4,7 +4,7 @@ import { AuthContext } from "../../../../Contexts/AuthProvider";
 import { toast } from "react-hot-toast";
 
 const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
-    const {name:serviceName, slots} = service;
+    const {name:serviceName, slots , _id} = service;
     // console.log(slots);
     const date = format(chooseDate, "PPPP");
     console.log(date);
@@ -28,6 +28,7 @@ const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
             email,
             phone,
             message,
+            serviceId :_id,
         };
         fetch('http://localhost:5000/appointments',{
             method:'POST',
@@ -46,7 +47,7 @@ const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
 
             }
             else{
-                toast.error(data.message)
+                toast.error(data.warningMsg)
             }
 
         })

@@ -9,6 +9,10 @@ import Reviews from "../../Home/Review/Reviews";
 import Faq from "../../Home/Faq/Faq";
 import About from "../../Home/About/About";
 import ServiceCategories from "../../Home/ServiceCategory/ServiceCategories";
+import DashboardLayout from "../../../Layout/DashboardLayout/DashboardLayout";
+import MyAppointmentDetail from "../../MyAppointtment/MyAppointmentDetail/MyAppointmentDetail";
+
+
 
 
 const router = createBrowserRouter([
@@ -48,6 +52,17 @@ const router = createBrowserRouter([
                 path:'/appointment',
                 element:<PrivateRoute><Appointment></Appointment></PrivateRoute>
             },
+        ]
+    },
+    {
+
+        path:'/myAppointmentDetail',
+        element:<PrivateRoute><DashboardLayout></DashboardLayout></PrivateRoute>,
+        children:[
+            {
+              path:'/myAppointmentDetail',
+              element:<MyAppointmentDetail></MyAppointmentDetail>
+            }
         ]
     }
 ])

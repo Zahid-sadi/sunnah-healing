@@ -4,11 +4,13 @@ import About from "../About/About";
 import Faq from "../Faq/Faq";
 import ServiceCategories from "../ServiceCategory/ServiceCategories";
 import Reviews from "../Review/Reviews";
+import BannerCarousel from "../../Banner/BannerCarousel";
 
 
 const Home = () => {
     return (
         <div className="mx-auto" >
+            <BannerCarousel></BannerCarousel>
             <Banner></Banner>,
             <ServiceCategories></ServiceCategories>,
             <About></About>,
