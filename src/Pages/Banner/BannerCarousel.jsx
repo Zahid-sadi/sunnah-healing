@@ -36,13 +36,13 @@ const BannerCarousel = () => {
             modules={[Autoplay, Navigation]}
             className="mySwiper"
             >
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img5} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img4} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img3} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img2} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img6} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img7} alt="" /></SwiperSlide>
-                <SwiperSlide ><img className="h-screen mt-0 overlay opacity-60 w-screen " src={img8} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img5} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img4} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img3} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img2} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img6} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img7} alt="" /></SwiperSlide>
+                <SwiperSlide ><img className="h-screen mt-0  opacity-50 w-screen " src={img8} alt="" /></SwiperSlide>
                
                
             </Swiper>
