@@ -24,14 +24,14 @@ const servicesData = [
 
 const ServiceCategories = () => {
     return (
-        <div className="mt-1">
+        
            
-            <div className=" grid gap-1 mx-auto lg:mx-28 md:gap-8 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+            <div className=" grid gap-1 mt-2 mx-auto  lg:mx-28 md:gap-8 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
                 {servicesData.map((service) => (
                     <ServiceCategory key={service.id} service={service}></ServiceCategory>
                 ))}
             </div>
-        </div>
+        
     );
 };
 
