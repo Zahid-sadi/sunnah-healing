@@ -30,7 +30,7 @@ const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
             message,
             serviceId :_id,
         };
-        fetch('http://localhost:5000/appointments',{
+        fetch('https://sunnah-healing-server.vercel.app',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

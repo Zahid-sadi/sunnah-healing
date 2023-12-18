@@ -1,11 +1,11 @@
 import {format} from "date-fns";
-import React, {useEffect, useState} from "react";
 import AppointmentCategory from "../AppointmentCategory/AppointmentCategory";
 import Loading from "../../../../Pages/Shared/Loading/Loading"
 import AppointmentModal from "../AppointmentModal/AppointmentModal";
 import {useQuery} from "@tanstack/react-query";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useState } from "react";
 AOS.init();
 
 const AppointmentInfo = ({chooseDate}) => {
@@ -18,7 +18,7 @@ const AppointmentInfo = ({chooseDate}) => {
     const {data: appointmentCategories = [], refetch, isLoading } = useQuery({
         queryKey: ["appointmentCategories", date],
         queryFn: async () => {
-            const res = await fetch(`http://localhost:5000/appointmentCategory?date=${date}`);
+            const res = await fetch(`https://sunnah-healing-server.vercel.app/appointmentCategory?date=${date}`);
             const data = await res.json();
             return data;
         },

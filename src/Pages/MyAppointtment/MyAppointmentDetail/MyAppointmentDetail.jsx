@@ -13,7 +13,7 @@ const MyAppointmentDetail = () => {
     const {data: appointments =[]}=useQuery({
         queryKey:['appointments', user?.email],
         queryFn : async()=>{
-            const res =await fetch(`http://localhost:5000/appointments?email=${user.email}`)
+            const res =await fetch(`https://sunnah-healing-server.vercel.app/appointments?email=${user.email}`)
             const data = await res.json();
             return data
         }
