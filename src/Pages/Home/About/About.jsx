@@ -3,7 +3,7 @@ import 'animate.css';
 import img from '../../assets/Images/hijama. bg free.png'
 const About = () => {
     return (
-        <div className="hero mt-10 h-fit p-10 bg-blue-300">
+        <div className="hero mt-10 h-fit p-10 bg-sky-300">
             <div className="hero-content flex-col lg:flex-row-reverse  rounded-lg ">
                 <div data-aos="fade-down-left" className="   bg-blue-400 rounded-lg shadow-2xl w-1/2 p-8 text-start font-serif">
                   <img className="overlay-50 h-fit" src={img} alt="" />

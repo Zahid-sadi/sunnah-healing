@@ -4,17 +4,19 @@ import About from "../About/About";
 import Faq from "../Faq/Faq";
 import ServiceCategories from "../ServiceCategory/ServiceCategories";
 import BannerCarousel from "../../Banner/BannerCarousel";
-import FeedbackCarousel from "../Feedback/FeedbackCarousel";
+import Feedback from "../Feedback/Feedback";
+import Contact from "../Contact/Contact";
 
 const Home = () => {
     return (
         
-        <div className="mx-auto">
+        <div className="mx-auto bg-sky-300">
             <BannerCarousel></BannerCarousel>
             <Banner></Banner>,
             <ServiceCategories></ServiceCategories>,
             <About></About>,<Faq></Faq>,
-            <FeedbackCarousel></FeedbackCarousel>
+            <Feedback></Feedback>,
+            <Contact></Contact>
             
         </div>
         

@@ -3,10 +3,10 @@ import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-
 
 const Faq = () => {
     return (
-        <div className="hero h-[450px] bg-blue-300 p-10  mx-auto">
+        <div className="hero h-fit lg:h-[450px] bg--300 p-10  mx-auto">
             <div className="hero-content flex-col lg:flex-row-reverse mx-auto ">
                 
-                <div className="text-center h-[450px] lg:text-left">
+                <div className="text-center h-[450px]  lg:text-left">
                     <h1 className=" text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-600 ">Massage</h1>
                     <Accordion>
                     <AccordionItem>
