@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
     const {name:serviceName, slots , _id} = service;
     // console.log(slots);
-    const date = format(chooseDate, "PPPP");
+    const date = format(chooseDate, "PP");
     console.log(date);
     const {user} = useContext(AuthContext);
 
@@ -30,7 +30,7 @@ const AppointmentModal = ({service, setService, chooseDate, refetch}) => {
             message,
             serviceId :_id,
         };
-        fetch('https://sunnah-healing-server.vercel.app',{
+        fetch('https://sunnah-healing-server.vercel.app/appointments',{
             method:'POST',
             headers:{
                 'content-type': 'application/json'

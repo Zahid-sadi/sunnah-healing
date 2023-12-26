@@ -4,7 +4,7 @@ import {DayPicker} from "react-day-picker";
 
 const AppointmentHero = ({chooseDate, setChooseDate}) => {
 
-    const date = format(chooseDate, "PPPP");
+    const date = format(chooseDate, "PP");
 
     return (
         <div  className="hero h-[700px] w-full">

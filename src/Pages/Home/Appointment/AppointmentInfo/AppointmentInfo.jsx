@@ -9,7 +9,7 @@ import { useState } from "react";
 AOS.init();
 
 const AppointmentInfo = ({chooseDate}) => {
-    const date = format(chooseDate, "PPPP");
+    const date = format(chooseDate, "PP");
     console.log(date);
 
     const [service, setService] = useState(null);
@@ -32,7 +32,7 @@ return <Loading></Loading>
         <div 
         className="m-auto mb-16">
             <div>
-                <h3 className="text-center text-2xl text-teal-400 font-bold p-5 m-5">
+                <h3 className="text-center text-2xl text-green-500 font-bold p-5 m-5">
                     You Choose Appointment on <span className=" font-mono t- text-2xl text-orange-500">{date}</span>
                 </h3>
             </div>
