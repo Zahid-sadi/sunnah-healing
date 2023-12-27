@@ -208,7 +208,7 @@ Narrated Anas: that he was asked about the wages of the one who cups others. He 
                         {/* <div className="hero "></div> */}
                         <div className="  grid md:grid-cols-1 lg:grid-cols-2  ">
                             <div>
-                                <h2 className="text-4xl text-center p-10  text-natural-focus  font-extrabold  italic   font-serif">
+                                <h2 className="text-4xl text-center p-10   text-black font-extrabold  italic   font-serif">
                                     Sunnah is the best way to leading life{" "}
                                 </h2>
                             </div>

@@ -7,7 +7,7 @@ const Faq = () => {
             <div className="hero-content w-full flex-col lg:flex-row-reverse mx-auto ">
                 
                 <div className="text-center h-[450px]  lg:text-left">
-                    <h1 className=" text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Massage</h1>
+                    <h1 className=" text-sky-900 text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Massage</h1>
                     <Accordion>
                     <AccordionItem>
                             <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
@@ -15,7 +15,7 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500  p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
@@ -24,16 +24,16 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
-                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
+                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-2xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
                                 <h3 className={`accordion-title`}></h3>Massage kokhon korar boyos koto
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
 
@@ -41,7 +41,7 @@ const Faq = () => {
                     </Accordion>
                 </div>
                 <div className="text-center h-[450px] lg:text-left">
-                    <h1 className=" text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Ruqiya</h1>
+                    <h1 className=" text-sky-900 text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Ruqiya</h1>
                     <Accordion>
                     <AccordionItem>
                             <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
@@ -49,7 +49,7 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
@@ -58,16 +58,16 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
-                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
+                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-2xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
                                 <h3 className={`accordion-title`}></h3>Ruqiya kokhon korar boyos koto
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
 
@@ -75,7 +75,7 @@ const Faq = () => {
                     </Accordion>
                 </div>
                 <div className="text-center h-[450px] lg:text-left">
-                    <h1 className=" text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Hijama</h1>
+                    <h1 className=" text-sky-900 text-4xl p-5 bg-blue-400 rounded-lg shadow-2xl mb-5  font-bold text-center  shadow-blue-700 ">Hijama</h1>
                     <Accordion>
                     <AccordionItem>
                             <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
@@ -83,7 +83,7 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
@@ -92,16 +92,16 @@ const Faq = () => {
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
                     <AccordionItem>
-                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
+                            <AccordionHeader className= " bg-sky-300 p-4 rounded-t-xl mb-2 w-full font-bold shadow-2xl shadow-sky-500 hover:bg-sky-400 hover:shadow-sm hover:shadow-sky-600 scale-100 duration-700  ">
                                 <h3 className={`accordion-title`}></h3>hijama kokhon korar boyos koto
                             </AccordionHeader>
 
                             <AccordionBody>
-                                <div className="accordion-body rounded-b-xl bg-sky-200 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
+                                <div className="accordion-body rounded-b-xl bg-sky-200 shadow-sm shadow-sky-500 p-4 mb-2">apni je kono boyosei hijama korte parben .  </div>
                             </AccordionBody>
                         </AccordionItem>
 

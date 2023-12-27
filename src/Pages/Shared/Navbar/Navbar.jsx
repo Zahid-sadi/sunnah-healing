@@ -2,6 +2,9 @@ import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import {AuthContext} from "../../../Contexts/AuthProvider";
 import {toast} from "react-hot-toast";
+import { IoIosLogIn, IoIosLogOut } from "react-icons/io";
+import img from '../../assets/Images/hijama. bg free.png'
+
 
 const Navbar = () => {
     const {user, logOut} = useContext(AuthContext);
@@ -44,7 +47,7 @@ const Navbar = () => {
     );
 
     return (
-        <div data-aos="fade-down" className="navbar glass h-20">
+        <div data-aos="fade-down" className="navbar text-black z-30 text-lg fixed bg-sky-700 h-20 p-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -65,13 +68,17 @@ const Navbar = () => {
                     </label>
                     <ul
                         tabIndex={0}
-                        className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 text-yellow-500"
+                        className="menu menu-compact dropdown-content mt-3 p-2"
                     >
                         {navItems}
                     </ul>
                 </div>
-                <Link to="" className="text-2xl font-bold ms-8 text-green-900">
-                    Sunnah Healing
+                <Link to="/" className="text-2xl font-bold ml-5  lg:ml-28 ">
+                  
+                    <img className="h-14 w-14" src={img} alt="" />
+                </Link>
+                <Link to="/" className="text-2xl font-bold text-slate-200 ">
+                Sunnah Healing
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -79,15 +86,16 @@ const Navbar = () => {
             </div>
             <div className="navbar-end ">
                 <div className="me-5 ">
-                    {user?.uid ? <p className="text-orange-400 font-bold mx-auto">{user.displayName} </p> : ""}
+                    {user?.uid ? <p className="text-slate-200 font-bold mx-auto">{user.displayName} </p> : ""}
                 </div>
                 {user?.uid ? (
-                    <Link onClick={logOutHandler} to="/login" className="btn border-indigo-400 rounded-s-full">
-                        Log out
+                    <Link onClick={logOutHandler} to="/login" className="text-yellow-500 rounded-full">
+                     
+                      <IoIosLogOut  className="h-12 w-12" />
                     </Link>
                 ) : (
-                    <Link to="/login" className="btn border-indigo-400 rounded-s-full">
-                        Log in
+                    <Link to="/login" className=" text-green-500 rounded">
+                         <IoIosLogIn className="h-16 w-16" />
                     </Link>
                 )}
             </div>

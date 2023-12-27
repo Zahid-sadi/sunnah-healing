@@ -46,7 +46,7 @@ console.log(name,mail,message);
                         </div>
 
                         <div className="form-control mt-6">
-                            <input className="btn btn-accent border-spacing-1 border-b-black" type="submit" value="submit" />
+                            <input className="btn  bg-blue-500 hover:bg-sky-400 w-1/3  border-spacing-1 border-b-black" type="submit" value="submit" />
                         </div>
                         <div className=" flex flex-row gap-10 justify-around">
                         <Link className="h-24 w-24 hover:scale-110 duration-700 "><TbPhoneCall className="text-green-700 h-24 w-24 " />

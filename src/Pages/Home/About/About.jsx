@@ -5,7 +5,7 @@ const About = () => {
     return (
         <div className="hero mt-10 h-fit p-10 bg-sky-300">
             <div className="hero-content flex-col lg:flex-row-reverse  rounded-lg ">
-                <div data-aos="fade-down-left" className="   bg-blue-400 rounded-lg shadow-xl shadow-sky-500 w-1/2 p-8 text-start  font-serif">
+                <div data-aos="fade-down-left" className="   bg-blue-400 rounded-lg shadow-2xl shadow-sky-500 w-1/2 p-8 text-start  font-serif">
                   <img className="overlay-50 h-fit" src={img} alt="" />
                   <h1 className="text-4xl font-extrabold p-5 text-center text-white">About Us</h1>
                     <p>Our team of highly trained professionals incorporates the latest complementary therapies into their
