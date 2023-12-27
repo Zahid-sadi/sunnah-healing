@@ -10,6 +10,8 @@ import About from "../../Home/About/About";
 import ServiceCategories from "../../Home/ServiceCategory/ServiceCategories";
 import DashboardLayout from "../../../Layout/DashboardLayout/DashboardLayout";
 import MyAppointmentDetail from "../../MyAppointtment/MyAppointmentDetail/MyAppointmentDetail";
+import Contact from "../../Home/Contact/Contact";
+import Feedback from "../../Home/Feedback/Feedback";
 
 
 
@@ -33,11 +35,15 @@ const router = createBrowserRouter([
             },
             {
                 path:'/review',
-                // element:,
+                element:<Feedback />,
             },
             {
                 path:'/faq',
                 element:<Faq></Faq>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
             },
             {
                 path:'/about',

@@ -1,7 +1,7 @@
 import React from "react";
 
 const MyAppointment = ({appoint}) => {
-    const {customer, serviceName, slot, appointmentDate, index} = appoint;
+    const {customer, serviceName, slot, appointmentDate} = appoint;
     return (
         <tbody>
             

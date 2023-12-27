@@ -1,4 +1,3 @@
-import React, { useContext } from "react";
 import Banner from "../../Banner/Banner";
 import About from "../About/About";
 import Faq from "../Faq/Faq";
