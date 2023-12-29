@@ -47,7 +47,7 @@ const Navbar = () => {
     );
 
     return (
-        <div data-aos="fade-down" className="navbar text-black z-30 text-lg fixed bg-sky-700 h-20 p-10">
+        <div data-aos="fade-down" className="navbar text-black z-30 text-lg fixed bg-sky-700  h-fit">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -84,17 +84,17 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 ">{navItems}</ul>
             </div>
-            <div className="navbar-end ">
-                <div className="me-5 ">
+            <div className="navbar-end  ">
+                <div className="me-12 ">
                     {user?.uid ? <p className="text-slate-200 font-bold mx-auto">{user.displayName} </p> : ""}
                 </div>
                 {user?.uid ? (
-                    <Link onClick={logOutHandler} to="/login" className="text-yellow-500 rounded-full">
+                    <Link onClick={logOutHandler} to="/login" className="text-yellow-500 rounded-full me-12">
                      
                       <IoIosLogOut  className="h-12 w-12" />
                     </Link>
                 ) : (
-                    <Link to="/login" className=" text-green-500 rounded">
+                    <Link to="/login" className=" text-green-500 rounded mr-12">
                          <IoIosLogIn className="h-16 w-16" />
                     </Link>
                 )}

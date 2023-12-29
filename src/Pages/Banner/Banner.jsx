@@ -21,7 +21,7 @@ const Banner = () => {
                     data-aos="fade-right"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine"
-                    className="rounded-l-xl text-center mx-auto  p-8 text-sky-600 bg-gradient-to-r  from-indigo-100 ..."
+                    className="rounded-l-xl text-center mx-auto  p-8 text-sky-600 bg-gradient-to-r  from-sky-300 ..."
                 >
                     <h3 className="mb-5 text-3xl font-bold text-white">Heal from the Sunnah </h3>
                     <p className=" text-lg ">

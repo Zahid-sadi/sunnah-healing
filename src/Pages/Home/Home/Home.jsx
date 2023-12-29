@@ -9,7 +9,7 @@ import Contact from "../Contact/Contact";
 const Home = () => {
     return (
         
-        <div className="mx-auto bg-sky-300">
+        <div className="mx-auto bg-sk-300">
             <BannerCarousel></BannerCarousel>
             <Banner></Banner>,
             <ServiceCategories></ServiceCategories>,

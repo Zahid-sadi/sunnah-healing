@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
     
-            <footer className="footer p-20 gird bg-sky-900 text-base-content text-center h-fit ">
+            <footer className="footer p-20 gird bg-sky-900 text-base-content text-justify h-fit ">
                 <div>
                     <svg
                         width="50"
@@ -16,8 +16,8 @@ const Footer = () => {
                     >
                         <img className="" c="" alt="" />
                     </svg>
-                    <h3 className="text-white font-bold text-xl">Sunnah healing</h3>
-                    <p className="text-green-400 font-semibold">
+                    <h3 className="text-white  text-center font-bold text-xl">Sunnah healing</h3>
+                    <p className="text-sky-400 text-center font-semibold">
                         We care as prophet(pbuh) recommended 
                     </p>
                 </div>

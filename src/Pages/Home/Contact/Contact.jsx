@@ -17,7 +17,7 @@ form.reset()
 console.log(name,mail,message);
   }
     return (
-        <div className="hero min-h-screen bg-sky-300">
+        <div className="hero min-h-screen bg-sk-300">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <div className="h-full w-full">
                     <img className="" src={img} alt="" />{" "}
@@ -46,12 +46,12 @@ console.log(name,mail,message);
                         </div>
 
                         <div className="form-control mt-6">
-                            <input className="btn  bg-blue-500 hover:bg-sky-400 w-1/3  border-spacing-1 border-b-black" type="submit" value="submit" />
+                            <input className="btn  bg-blue-500 shadow-xl shadow-blue-600 hover:shadow-lg hover:shadow-sky-600 hover:bg-sky-400 w-1/3   border-0  " type="submit" value="submit" />
                         </div>
-                        <div className=" flex flex-row gap-10 justify-around">
-                        <Link className="h-24 w-24 hover:scale-110 duration-700 "><TbPhoneCall className="text-green-700 h-24 w-24 " />
+                        <div className=" flex flex-row gap-10 justify-around mt-4">
+                        <Link className="h-24 w-24 hover:scale-110 duration-700 "><TbPhoneCall className="text-green-700 h-24 w-24 rounded-full p-5 shadow-inner shadow-blue-500 hover:shadow-sky-400 " />
                         </Link>
-                        <Link className="h-24 w-24 hover:scale-110 duration-700 "><FaWhatsapp  className="text-green-800 h-24 w-24"/></Link>
+                        <Link className="h-24 w-24  hover:scale-110 duration-700 "><FaWhatsapp  className="text-green-800 h-24 w-24 p-5 rounded-full shadow-inner shadow-blue-500  hover:shadow-sky-400 "/></Link>
                         
                         </div>
                         
